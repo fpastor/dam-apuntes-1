@@ -345,8 +345,8 @@ Pero claro, en programación eso no siempre es así. A veces queremos que se eje
 
 Un condicional es una estructura que, como su propio nombre indica, ejecuta un conjunto de instrucciones únicamente si se cumple una condición (o si no se cumple).
 
-> [Todo]
-> Añadir diagrama de flujo
+>[!Todo]
+>Añadir diagrama de flujo
 
 ```javascript
 if(condició) { Instruccions si V }
@@ -372,10 +372,12 @@ Adiós
 Adiós
 ```
 
->[Alert]
->Fíjate en que la frase "Adiós" se escribirá **siempre** porque está fuera del ``if``.
+>[!Alert]
+> Fíjate en que la frase "Adiós" se escribirá **siempre** porque está fuera del ``if``.
 
-> [Todo]
+---
+
+>[!Todo]
 > Añadir diagrama de flujo
 
 ```javascript
