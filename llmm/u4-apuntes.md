@@ -372,7 +372,7 @@ Adiós
 Adiós
 ```
 
->[!Alert]
+>[!Important]
 > Fíjate en que la frase "Adiós" se escribirá **siempre** porque está fuera del ``if``.
 
 ---
