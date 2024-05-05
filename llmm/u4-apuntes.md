@@ -345,11 +345,38 @@ Pero claro, en programación eso no siempre es así. A veces queremos que se eje
 
 Un condicional es una estructura que, como su propio nombre indica, ejecuta un conjunto de instrucciones únicamente si se cumple una condición (o si no se cumple).
 
+> [Todo]
+> Añadir diagrama de flujo
+
 ```javascript
 if(condició) { Instruccions si V }
 ```
 
-![Disculpen las molestias, estamos trabajado en ello](img/work-dog.png)
+Sirve para ejecutar instrucciones unicamente si se cumple la condición entre paréntesis. IF significa "si..."
+
+```javascript
+let numero = prompt("Dime un número pisha", "");
+if(numero>0) {
+     document.write("Dijiste un número positivo<br>");
+}
+document.write("Adiós");
+````
+
+Con este código, si el usuario escribe 7 se verá:
+
+```javascript
+/* Con este código, si el usuario escribe 7 se verá: */
+Dijiste un número positivo
+Adiós
+/* No obstante, si escribe -3, solamente verá: */
+Adiós
+```
+
+>[Alert]
+>Fíjate en que la frase "Adiós" se escribirá **siempre** porque está fuera del ``if``.
+
+> [Todo]
+> Añadir diagrama de flujo
 
 ```javascript
 if(condició) { Instruccions si V }
