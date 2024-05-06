@@ -1,6 +1,6 @@
 # U4 JavaScript
 
-## Intro
+## Introducción
 
 Hasta ahora solo hemos creado páginas web estáticas. Esto significa que nunca cambiaban.
 JavaScript se utiliza para crear páginas web dinámicas. Una web dinámica es aquella que puede cambiar según lo que suceda. Por ejemplo, que ocurra algo al pulsar un botón, que aparezcan o desaparezcan elementos...
@@ -21,7 +21,7 @@ En ambas formas, la línea `<script...>` del HTML se puede colocar en 2 lugares:
 * Dentro de `<head></head>` (Por el momento lo haremos así).
 * Antes de `</body>` (última línea del BODY). (Veremos que a veces es necesario).
 
-## Dos formas de agregar código JS
+## Dos formas de agregar código JavaScript
 
 ### En el mismo archivo HTML
 
@@ -73,7 +73,7 @@ Hola desde HTML
 Hola desde JS
 ```
 
-### En otro archivo .JS
+### En otro archivo .js
 
 La segunda forma de agregar código JS es hacerlo en otro archivo diferente, con extensión .js y que estará vinculado al HTML con la línea `<script src="">`.
 
@@ -109,7 +109,9 @@ Hola desde JS
 Hola desde HTML
 ```
 
-## Alert
+## Conceptos básicos
+
+### Alert
 
 Esta instrucción sirve para que el navegador muestre un mensaje de alerta con el texto que coloques entre comillas. Es una ventana emergente cuyo aspecto dependerá del navegador en el que nos encontremos.
 
@@ -119,7 +121,7 @@ Por ejemplo
 alert("¡Hola mundo!");
 ```
 
-## Document.Write
+### Document.Write
 
 Esta instrucción se utiliza para escribir en el HTML desde JavaScript.
 
@@ -130,7 +132,7 @@ document.write("Hola <u>mundo</u>");
 
 > **¡Atención!** En realidad, esta NO es la mejor opción para añadir texto desde JS, ya que, como se vio en los ejemplos iniciales, siempre se agregaría al principio o al final de la página web. Solo lo usaremos en los primeros ejercicios. Normalmente, querremos colocar el nuevo texto (o lo que sea) en lugares específicos, y para eso veremos métodos mejores...
 
-## La consola del navegador
+### La consola del navegador
 
 Cuando escribimos un código JavaScript, es normal que no funcione a la primera, ya que los lenguajes de programación son muy estrictos y cualquier pequeño error puede provocar que falle. Pero, ¿cómo sabemos dónde está el error?
 
@@ -150,7 +152,7 @@ Uncaught ReferenceError: hola is not defined
 
 Corregimos esto (faltan las comillas) y en la consola ya no aparece nada.
 
-### console.log
+#### console.log
 
 console.log("Text per a proves");
 
@@ -164,7 +166,9 @@ Esto mostrará "Probando..." en la consola del navegador.
 
 Puede parecer algo trivial, pero esta opción es muy útil para realizar pruebas. En el futuro, cuando los códigos sean más complicados, mostrar cosas por la consola nos puede ayudar a realizar comprobaciones.
 
-## Concepto de variable
+## Variables
+
+### Concepto de variable
 
 Un concepto fundamental en cualquier lenguaje de programación (no solo en JavaScript) es el de variable. Pero, ¿qué es una variable?
 
