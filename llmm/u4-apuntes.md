@@ -460,7 +460,7 @@ else { ... }
 | `==`       | Igual que         | `4 == 4` → VERDADERO<br> `7 == 4` → FALSO |
 | `!=`       | Distinto a        | `9 != 28` → VERDADERO<br> `4 != 4` → FALSO |
 
->[Important]
+>[!Important]
 > ¡NO CONFUNDAS ``=`` CON ``==``!
 >
 > * Un igual es ASIGNACIÓN ("es igual a")
@@ -619,10 +619,8 @@ Además de getElementById, hay otros "atajos" para acceder...
 
 Permite acceder a todos los nodos que sean de un tipo de etiqueta HTML. Por ejemplo: a todos los IMG, a todos los H1, a todos los LI...
 
-> ¡Muy importante!
->
-> getElementById devolvía directamente un nodo, pero getElementsByTagName devuelve un array de nodos.
->
+>[!Important]
+>``getElementById`` devolvía directamente un nodo, pero ``getElementsByTagName`` devuelve un array de nodos.
 >Después habrá que recorrerlo para modificar lo que queramos...
 
 ```html
