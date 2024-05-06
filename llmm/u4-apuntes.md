@@ -449,7 +449,7 @@ elseif() { ... }
 else { ... }
 ```
 
-## Operadores de comparación
+### Operadores de comparación
 
 | Operador | Nombre            | Ejemplos    |
 |----------|-------------------|-------------|
@@ -465,7 +465,7 @@ else { ... }
 > * Un igual es ASIGNACIÓN ("es igual a")
 > * Dos iguales (==) es COMPARACIÓN ("¿es igual")
 
-## Operadores lógicos
+### Operadores lógicos
 
 | Operador | Nombre | Ejemplos |
 |----------|--------|----------|
@@ -477,15 +477,15 @@ else { ... }
 
 >[TODO] Contenidos Diapo 29
 
-### WHILE
+### while
 
 >[TODO] Contenidos Diapo 30
 
-### FOR
+### for
 
 >[TODO] Contenidos Diapo 31
 
-## ARRAYS
+## Arrays
 
 >[TODO] Contenidos Diapo 33
 >
@@ -764,6 +764,7 @@ let zona1 = document.getElementById("zona1");
 zona1.appendChild(foto);
 // En este caso, no queremos agregar el nodo al final de la página web, sino en una zona (div) específica. Primero encontramos el nodo del div, y es a él a quien le hago el appendChild.
 ```
+
 ## Eventos
 
 >[TODO] Contenidos Diapo 58
