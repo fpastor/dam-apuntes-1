@@ -115,9 +115,8 @@ Hola desde HTML
 
 Esta instrucción sirve para que el navegador muestre un mensaje de alerta con el texto que coloques entre comillas. Es una ventana emergente cuyo aspecto dependerá del navegador en el que nos encontremos.
 
-Por ejemplo
-
 ```js
+// Por ejemplo
 alert("¡Hola mundo!");
 ```
 
@@ -130,7 +129,8 @@ document.write("Hola mundo");
 document.write("Hola <u>mundo</u>");
 ```
 
-> **¡Atención!** En realidad, esta NO es la mejor opción para añadir texto desde JS, ya que, como se vio en los ejemplos iniciales, siempre se agregaría al principio o al final de la página web. Solo lo usaremos en los primeros ejercicios. Normalmente, querremos colocar el nuevo texto (o lo que sea) en lugares específicos, y para eso veremos métodos mejores...
+> [!IMPORTANT]
+> En realidad, esta NO es la mejor opción para añadir texto desde JS, ya que, como se vio en los ejemplos iniciales, siempre se agregaría al principio o al final de la página web. Solo lo usaremos en los primeros ejercicios. Normalmente, querremos colocar el nuevo texto (o lo que sea) en lugares específicos, y para eso veremos métodos mejores...
 
 ### La consola del navegador
 
@@ -138,15 +138,14 @@ Cuando escribimos un código JavaScript, es normal que no funcione a la primera,
 
 Para eso, nos puede ayudar la **consola** del navegador que estemos utilizando. En el caso de Google Chrome, se puede acceder a la consola haciendo clic derecho en la página web, seleccionando *Inspeccionar* o *Más herramientas* y luego *Herramientas para desarrolladores*. Una vez en las herramientas para desarrolladores, podemos encontrar la consola en la pestaña *Consola*. Allí, el navegador nos mostrará mensajes de error y otros tipos de información útiles para **depurar** nuestro código JavaScript.
 
-Por ejemplo, con este código...
-
 ```js
+// Por ejemplo...
 alert(hola);
 ```
 
 ...si abrimos la página que utiliza este script, en la consola aparecerá este error:
 
-```
+```error
 Uncaught ReferenceError: hola is not defined
 ```
 
@@ -174,7 +173,7 @@ Un concepto fundamental en cualquier lenguaje de programación (no solo en JavaS
 
 Una variable es un espacio de memoria que se reserva para almacenar un dato. Para entenderlo más fácilmente, imagina que es una "caja" que contendrá algo (texto, número...) que utilizaremos en nuestro programa (en este caso, nuestra web). A esta "caja" se le asigna un nombre para poder referirnos a ella.
 
-Ejemplos
+Ejemplos:
 
 * Podríamos crear una variable llamada *nombre* que contenga la palabra *Chechu*.
 * Podríamos crear una variable llamada *edad* que contenga el número *23*.
@@ -239,26 +238,23 @@ Me llamo Bartolo
 
 Podemos realizar operaciones con variables que contengan números. Los operadores básicos son:
 
-* Suma: +
-* Resta: -
-* Producto: *
-* División: /
-
-Otros operadores menos frecuentes:
-
-* Potencia: **
-* Resto de la división: %
-
-Por ejemplo:
+|                                 | Operación                | Símbolo |
+|---------------------------------|--------------------------|---------|
+| **Operadores básicos**          | Suma                     | `+`     |
+|                                 | Resta                    | `-`     |
+|                                 | Producto                 | `*`     |
+|                                 | División                 | `/`     |
+| **Operadores menos frecuentes** | Potencia                 | `**`    |
+|                                 | Resto de la división     | `%`     |
 
 ```javascript
+// Por ejemplo...
 let hombres = 23;
 let mujeres = 7;
 let total = hombres + mujeres;
 document.write("Hay " + total + " personas");
-```
 
-```txt
+// Resultado...
 Hay 30 personas
 ```
 
@@ -270,9 +266,8 @@ Si queremos sumar 1 a una variable (esto también se llama incrementarla), la fo
 nombreVariable++;
 ```
 
-Por ejemplo:
-
 ```javascript
+// Por ejemplo...
 let edad = 36;
 edad++;
 document.write("Tengo " + edad + " años");
@@ -293,9 +288,8 @@ Se utiliza para declarar una variable constante. Esto significa que no podemos c
 const size = 10;
 ```
 
-Por ejemplo:
-
 ```javascript
+// Por ejemplo...
 const size = 10;
 size = 11;
 ```
@@ -318,9 +312,8 @@ Si quieres saber los motivos o te interesa el tema, puedes leer este artículo:
 
 Sirve para que el navegador muestre una ventana con una pregunta al usuario. Lo que él escriba se guardará en la variable llamada `nombreVariable`.
 
-Por ejemplo:
-
 ```javascript
+// Por ejemplo...
 let num = prompt("Dime un número pisha");
 document.write("Has dicho el número " + num + ". ¡Adiós!");
 ```
@@ -363,14 +356,11 @@ if(numero>0) {
      document.write("Dijiste un número positivo<br>");
 }
 document.write("Adiós");
-````
 
-Con este código, si el usuario escribe 7 se verá:
-
-```javascript
 // Con este código, si el usuario escribe 7 se verá:
 Dijiste un número positivo
 Adiós
+
 // No obstante, si escribe -3, solamente verá:
 Adiós
 ```
@@ -397,12 +387,11 @@ else {
      document.write("Dijiste un número negativo<br>");
 }
 document.write("Adiós");
-```
 
-```javascript
 // Con este código, si el usuario escribe 7 se verá:
 Dijiste un número positivo
 Adiós
+
 // Y con un -3, se verá:
 Dijiste un número negativo
 Adiós
@@ -451,14 +440,14 @@ else { ... }
 
 ### Operadores de comparación
 
-| Operador | Nombre            | Ejemplos    |
-|----------|-------------------|-------------|
-| `>`        | Mayor que         | `7 > 4` → VERDADERO<br> `4 > 7` → FALSO |
-| `<`        | Menor que         | `4 < 7` → VERDADERO<br> `7 < 4` → FALSO |
-| `>=`        | Mayor o igual que | `4 >= 4` → VERDADERO<br> `7 >= 4` → VERDADERO |
+| Operador   | Nombre            | Ejemplos                                      |
+|------------|-------------------|-----------------------------------------------|
+| `>`        | Mayor que         | `7 > 4` → VERDADERO<br> `4 > 7` → FALSO       |
+| `<`        | Menor que         | `4 < 7` → VERDADERO<br> `7 < 4` → FALSO       |
+| `>=`       | Mayor o igual que | `4 >= 4` → VERDADERO<br> `7 >= 4` → VERDADERO |
 | `<=`       | Menor o igual que | `7 <= 7` → VERDADERO<br> `4 <= 7` → VERDADERO |
-| `==`       | Igual que         | `4 == 4` → VERDADERO<br> `7 == 4` → FALSO |
-| `!=`       | Distinto a        | `9 != 28` → VERDADERO<br> `4 != 4` → FALSO |
+| `==`       | Igual que         | `4 == 4` → VERDADERO<br> `7 == 4` → FALSO     |
+| `!=`       | Distinto a        | `9 != 28` → VERDADERO<br> `4 != 4` → FALSO    |
 
 >[!Important]
 > ¡NO CONFUNDAS ``=`` CON ``==``!
@@ -468,11 +457,11 @@ else { ... }
 
 ### Operadores lógicos
 
-| Operador | Nombre | Ejemplos |
-|----------|--------|----------|
-| && | Y | `((7>4) && (5>3))` sería VERDADERO<br>`((7>4) && (2>3))` sería FALSO |
-| \|\| | O | `(7>4) \|\| (2>3))` sería VERDADERO<br> `((1>4) \|\| (2>3))` sería FALSO |
-| ! | NO | `(!(1>4))` sería VERDADERO<br> `(!(7>4))` sería FALSO |
+| Operador | Nombre | Ejemplos                                                                 |
+|----------|--------|--------------------------------------------------------------------------|
+| &&       | Y      | `((7>4) && (5>3))` sería VERDADERO<br>`((7>4) && (2>3))` sería FALSO     |
+| \|\|     | O      | `(7>4) \|\| (2>3))` sería VERDADERO<br> `((1>4) \|\| (2>3))` sería FALSO |
+| !        | NO     | `(!(1>4))` sería VERDADERO<br> `(!(7>4))` sería FALSO                    |
 
 ## Bucles
 
@@ -835,8 +824,6 @@ Hemos reducido 3 de las 4 imágenes desde JS.
 |-------------------|-----------------|
 | `getElement...`   | Nodo            |
 | `getElements...`  | "Array"         |
-
-
 
 ### Eliminar nodos del DOM
 
