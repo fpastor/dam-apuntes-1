@@ -476,18 +476,59 @@ else { ... }
 
 ## Bucles
 
-> [!NOTE]
-> Contenidos Diapo 29
+Otro concepto muy importante en programación es el de bucle. Seguramente te resulte familiar, pero ¿qué es?
+
+Un bucle es un conjunto de instrucciones que se ejecuta repetidamente. Puede ser una cantidad de veces fija (por ejemplo, quiero que esto ocurra 10 veces) o que dependa de una condición (por ejemplo, quiero que algo se repita hasta que el usuario haga algo).
 
 ### while
 
-> [!NOTE]
-> Contenidos Diapo 30
+Esta es una manera de hacer bucles. Significa "mientras".
+
+```javascript
+// Por ejemplo...
+let contador = 0;
+while(contador<5)
+{
+document.write("Hola<br>");
+contador++;
+}
+document.write("Adiós");
+```
+
+```javascript
+// Resultado...
+Hola
+Hola
+Hola
+Hola
+Hola
+Adiós
+```
+
+Ha pasado esto...
+
+* Se ha creado una variable llamada contador que comienza con un 0 dentro.
+* ¿Es menor que 5? Sí. Entonces se entra en el bucle, se escribe "Hola" y se incrementa el contador (ahora es 1).
+* ¿Es menor que 5? Sí. Entonces "Hola" y sube a 2...
+* Así sucesivamente hasta que valga 5. ¿Es menor que 5? No. Se sale del bucle, se escribe "Adiós" y se termina el programa.
 
 ### for
 
-> [!NOTE]
-> Contenidos Diapo 31
+Otra manera de hacer bucles. Significa "para". Aunque parezca más "feo", se utiliza más.
+
+```javascript
+for(let i=0 ; i<5 ; i++)
+{
+     document.write("Hola<br>");
+}
+document.write("Adiós");
+```
+
+Este código hace lo **mismo** que el código con while de la página anterior (la única cosa es que a la variable se le ha llamado i en lugar de contador...)
+
+Podríamos decir que el código significa:
+
+* Desde ``i=0``, mientras i sea menor que ``5``, e incrementando ``i`` cada vez, escribe ``Hola<br>``.
 
 ## Arrays
 
