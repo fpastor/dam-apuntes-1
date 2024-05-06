@@ -21,7 +21,6 @@ En ambas formas, la línea `<script...>` del HTML se puede colocar en 2 lugares:
 * Dentro de `<head></head>` (Por el momento lo haremos así).
 * Antes de `</body>` (última línea del BODY). (Veremos que a veces es necesario).
 
-
 ## Dos formas de agregar código JS
 
 ### En el mismo archivo HTML
@@ -337,7 +336,7 @@ Y si escribes un 3 y aceptas, la página web mostrará:
 Has dicho el número 3. ¡Adiós!
 ```
 
-### Condicionales
+## Condicionales
 
 Hasta ahora, en los scripts que hemos hecho, se ejecutaban **todas** las líneas, una por una y de arriba abajo.
 
