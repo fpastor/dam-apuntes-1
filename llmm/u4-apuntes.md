@@ -535,6 +535,25 @@ Podríamos decir que el código significa:
 > [!NOTE]
 > Contenidos Diapo 33, 34, 35, 36
 
+Y otro concepto muy importante en programación es el de array. ¿Qué es?
+
+Un array es un tipo de dato compuesto, en el cual se almacena un conjunto de datos ordenados. Para que nos entendamos, es una "caja de cajas". Una secuencia de cajas con nombre, y los compartimentos de la cual van numerados desde el 0 en adelante...
+
+Podríamos crear un array llamado "dias" de tamaño 7, en el cual guardamos desde la palabra "lunes" hasta la palabra "domingo" (desde la posición 0 hasta la 6).
+
+![Ejemplo array 1](img/ejemplo-array-1.png)
+
+Podríamos crear un array llamado "puntos" de tamaño 5, en el cual guardaremos las puntuaciones de un jugador en un juego que se juega a 5 rondas.
+
+![Ejemplo array 2](img/ejemplo-array-2.png)
+
+> [!TIP]
+> Esta diapositiva es solo para que entiendas el concepto.
+> Ahora veremos cómo se crean y manejan. ¡Ah! Piensa que los arrays en principio no se ven. Igual que las variables...
+
+
+
+
 ## Document Object Model
 
 ### Antes de nada
