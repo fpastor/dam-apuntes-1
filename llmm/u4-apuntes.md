@@ -368,10 +368,10 @@ document.write("Adiós");
 Con este código, si el usuario escribe 7 se verá:
 
 ```javascript
-/* Con este código, si el usuario escribe 7 se verá: */
+// Con este código, si el usuario escribe 7 se verá:
 Dijiste un número positivo
 Adiós
-/* No obstante, si escribe -3, solamente verá: */
+// No obstante, si escribe -3, solamente verá:
 Adiós
 ```
 
@@ -400,10 +400,10 @@ document.write("Adiós");
 ```
 
 ```javascript
-/* Con este código, si el usuario escribe 7 se verá: */
+// Con este código, si el usuario escribe 7 se verá:
 Dijiste un número positivo
 Adiós
-/* Y con un -3, se verá: */
+// Y con un -3, se verá:
 Dijiste un número negativo
 Adiós
 ```
@@ -440,7 +440,7 @@ else {
 >El últomo ``else`` NO lleva paréntesis detrás. Se escribe así, tal cual...
 
 ```javascript
-/* En el ejemplo hay 3 "caminos" (IF-ELSEIF-ELSE). Si, por ejemplo, tuvieramos 5, la estructura sería... */
+// En el ejemplo hay 3 "caminos" (IF-ELSEIF-ELSE). Si, por ejemplo, tuvieramos 5, la estructura sería...
 
 if() { ... }
 elseif() { ... }
@@ -460,10 +460,11 @@ else { ... }
 | `==`       | Igual que         | `4 == 4` → VERDADERO<br> `7 == 4` → FALSO |
 | `!=`       | Distinto a        | `9 != 28` → VERDADERO<br> `4 != 4` → FALSO |
 
-> ¡NO CONFUNDAS = CON ==!
+>[Important]
+> ¡NO CONFUNDAS ``=`` CON ``==``!
 >
 > * Un igual es ASIGNACIÓN ("es igual a")
-> * Dos iguales (==) es COMPARACIÓN ("¿es igual")
+> * Dos iguales (``==``) es COMPARACIÓN ("¿es igual")
 
 ### Operadores lógicos
 
