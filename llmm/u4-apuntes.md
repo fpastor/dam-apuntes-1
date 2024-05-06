@@ -470,7 +470,7 @@ else { ... }
 | \|\| | O | `(7>4) \|\| (2>3))` sería VERDADERO<br> `((1>4) \|\| (2>3))` sería FALSO |
 | ! | NO | `(!(1>4))` sería VERDADERO<br> `(!(7>4))` sería FALSO |
 
-### Bucles
+## Bucles
 
 >[TODO] Contenidos Diapo 29
 
