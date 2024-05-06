@@ -688,10 +688,30 @@ document.forms[0].elements[0].size = "200px";
 
 > Descender por todo el árbol de nodos sería una locura. Pero tranquilo, ahora veremos una forma mucho más fácil...
 
----
+Por tanto, cuando queramos acceder a un nodo que no sea el body, tendremos que utilizar una serie de "atajos" para no recorrer todo el árbol.
 
-> [!NOTE]
-Contenidos Diapo 42
+#### getElementById
+
+Permite acceder directamente al nodo a través de su ID (es decir, acceder a una etiqueta HTML a la cual hayamos puesto un ID).
+
+```html
+<!-- Por ejemplo -->
+<body>
+    <h1 id="mititulo">La tienda friki</h1>
+    <h2>Bienvenido al paraíso gamer</h2>
+    <ul>
+        <li>Inicio</li>
+...
+```
+
+```javacript
+let titulo = document.getElementById("mititulo");
+```
+
+Con esto, acabo de encontrar directamente el nodo del H1 y lo he guardado en la variable titulo.
+
+> [!IMPORTANT]
+> Sí, en una variable podemos guardar también un nodo (una etiqueta HTML).
 
 ### Modificar los nodos del DOM
 
