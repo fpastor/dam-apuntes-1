@@ -550,23 +550,85 @@ Podríamos crear un array llamado "puntos" de tamaño 5, en el cual guardaremos 
 
 ### let nombreArray = [valor1, valor2,...];
 
-> [!NOTE]
-> Contenidos Diapo 34
+Sirve para declarar un array e inicializarlo.
+
+Dicho de otra forma más sencilla: sirve para crear una "caja de cajas" (con un nombre) y ponerle valores dentro.
+
+```javascript
+let dias = ["lunes", "martes", ..., "domingo"];
+let puntos = [1000, 800, ..., 1200];
+```
+
+> [!TIP]
+> Fíjate en que, cuando son textos, los valores se ponen entre comillas. Haciendo eso, todavía NO se ve NADA por pantalla. Después veremos cómo mostrar un array.
 
 ### nombreArray[posicion]
 
-> [!NOTE]
-> Contenidos Diapo 35
+Sirve para acceder a una posición en concreto del array. 
+
+```javascript
+// Por ejemplo...
+let dias = ["lunes", "martes", ..., "domingo"];
+document.write("Hoy es " + dias[1]);
+
+// Resultado...
+Hoy es martes
+```
+
+> [!IMPORTANT]
+> ¡RECUERDA QUE LOS ARRAYS COMIENZAN POR 0, NO POR 1!
+> Por eso, mostrando la posición 1, se ve "martes" y no "lunes".
 
 ### Recorrer un array (FOR)
 
-> [!NOTE]
-> Contenidos Diapo 36
+Si tenemos un array y queremos recorrerlo (para mostrarlo por pantalla, o para cualquier otra cosa), usaremos un BUCLE. Por ejemplo, con for:
+
+```javascript
+// Por ejemplo, con for...
+let dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"];
+for(let i=0 ; i<dias.length; i++)
+{
+    document.write(dias[i] + "<br>");
+}
+
+// Resultado...
+lunes
+martes
+miércoles
+jueves
+viernes
+sábado
+domingo
+```
+
+> [!TIP]
+> Fíjate que, en lugar de ``7``, pone dias.length. Con ``7`` también funcionaría, pero la ventaja es que funcionará siempre, sea cual sea la longitud del array. Significa "sigue mientras no superemos la longitud del array".
 
 ### Recorrer un array (FOREACH)
 
-> [!NOTE]
-> Contenidos Diapo 37
+Una altra manera de recórrer un array és amb la instrucció forEach. És un bucle específic per a aquestes estructures.
+ Per exemple:
+
+```javascript
+// Por ejemplo...
+let nombres = ["pepe", "juan", ... , "sara", "jorge"];
+nombres.forEach(function(elemento,indice) {
+    document.write(elemento + "<br>");
+});
+
+// Resultado...
+pepe
+juan
+marta
+javier
+víctor
+sara
+jorge
+```
+
+> [!TIP]
+> El bucle significa "quiero recorrer el array nombres, nombrando a cada posición (6, 1, 2...) y a cada valor ("pepe", "juan"...) elemento.
+> Si te fijas, con forEach NO hace falta un contador, ni se hace ningún incremento.
 
 ## Document Object Model
 
