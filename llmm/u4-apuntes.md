@@ -437,7 +437,7 @@ else {
 ```
 
 >[!Important]
->El últomo ``else`` NO lleva paréntesis detrás. Se escribe así, tal cual...
+>El último ``else`` NO lleva paréntesis detrás. Se escribe así, tal cual...
 
 ```javascript
 // En el ejemplo hay 3 "caminos" (IF-ELSEIF-ELSE). Si, por ejemplo, tuvieramos 5, la estructura sería...
@@ -476,25 +476,25 @@ else { ... }
 
 ## Bucles
 
->[TODO] Contenidos Diapo 29
+>[!NOTE] Contenidos Diapo 29
 
 ### while
 
->[TODO] Contenidos Diapo 30
+>[!NOTE] Contenidos Diapo 30
 
 ### for
 
->[TODO] Contenidos Diapo 31
+>[!NOTE] Contenidos Diapo 31
 
 ## Arrays
 
->[TODO] Contenidos Diapo 33
+>[!NOTE] Contenidos Diapo 33
 >
->[TODO] Contenidos Diapo 34
+>[!NOTE] Contenidos Diapo 34
 >
->[TODO] Contenidos Diapo 35
+>[!NOTE] Contenidos Diapo 35
 >
->[TODO] Contenidos Diapo 36
+>[!NOTE] Contenidos Diapo 36
 
 ## Document Object Model
 
@@ -554,7 +554,7 @@ document.forms[0].elements[0].size = "200px";
 
 > Descender por todo el árbol de nodos sería una locura. Pero tranquilo, ahora veremos una forma mucho más fácil...
 
->[TODO] Contenidos Diapo 42
+>[!NOTE] Contenidos Diapo 42
 
 ### Modificar los nodos del DOM
 
@@ -766,42 +766,42 @@ zona1.appendChild(foto);
 
 ## Eventos
 
->[TODO] Contenidos Diapo 58
+>[!NOTE] Contenidos Diapo 58
 
 ### 3 formas de manejar eventos
 
->[TODO] Contenidos Diapo 59
+>[!NOTE] Contenidos Diapo 59
 
->[TODO] Contenidos Diapo 60
+>[!NOTE] Contenidos Diapo 60
 
 ### Eventos de ratón
 
->[TODO] Contenidos Diapo 61
+>[!NOTE] Contenidos Diapo 61
 
 #### Mismo evento en muchos nodos
 
->[TODO] Contenidos Diapo 63
+>[!NOTE] Contenidos Diapo 63
 
 #### Saber que nodo ha activado el evento
 
->[TODO] Contenidos Diapo 64
+>[!NOTE] Contenidos Diapo 64
 
 #### Asignar evento a un nuevo nodo
 
->[TODO] Contenidos Diapo 65
+>[!NOTE] Contenidos Diapo 65
 
 ### Eventos de teclado
 
->[TODO] Contenidos Diapo 67
+>[!NOTE] Contenidos Diapo 67
 >
->[TODO] Contenidos Diapo 68
+>[!NOTE] Contenidos Diapo 68
 
 ### Tempotoralizar acciones
 
->[TODO] Contenidos Diapo 70
+>[!NOTE] Contenidos Diapo 70
 >
->[TODO] Contenidos Diapo 71
+>[!NOTE] Contenidos Diapo 71
 >
->[TODO] Contenidos Diapo 72
+>[!NOTE] Contenidos Diapo 72
 >
->[TODO] Contenidos Diapo 73
+>[!NOTE] Contenidos Diapo 73
