@@ -476,25 +476,23 @@ else { ... }
 
 ## Bucles
 
-> [!NOTE] Contenidos Diapo 29
+> [!NOTE]
+> Contenidos Diapo 29
 
 ### while
 
-> [!NOTE] Contenidos Diapo 30
+> [!NOTE]
+> Contenidos Diapo 30
 
 ### for
 
-> [!NOTE] Contenidos Diapo 31
+> [!NOTE]
+> Contenidos Diapo 31
 
 ## Arrays
 
-> [!NOTE] Contenidos Diapo 33
-
-> [!NOTE] Contenidos Diapo 34
-
-> [!NOTE] Contenidos Diapo 35
-
-> [!NOTE] Contenidos Diapo 36
+> [!NOTE]
+> Contenidos Diapo 33, 34, 35, 36
 
 ## Document Object Model
 
@@ -554,7 +552,10 @@ document.forms[0].elements[0].size = "200px";
 
 > Descender por todo el árbol de nodos sería una locura. Pero tranquilo, ahora veremos una forma mucho más fácil...
 
-> [!NOTE] Contenidos Diapo 42
+---
+
+> [!NOTE]
+Contenidos Diapo 42
 
 ### Modificar los nodos del DOM
 
@@ -766,42 +767,40 @@ zona1.appendChild(foto);
 
 ## Eventos
 
-> [!NOTE] Contenidos Diapo 58
+> [!NOTE]
+> Contenidos Diapo 58
 
 ### 3 formas de manejar eventos
 
-> [!NOTE] Contenidos Diapo 59
-
-> [!NOTE] Contenidos Diapo 60
+> [!NOTE]
+> Contenidos Diapo 59, 60
 
 ### Eventos de ratón
 
-> [!NOTE] Contenidos Diapo 61
+> [!NOTE]
+> Contenidos Diapo 61
 
 #### Mismo evento en muchos nodos
 
-> [!NOTE] Contenidos Diapo 63
+> [!NOTE]
+> Contenidos Diapo 63
 
 #### Saber que nodo ha activado el evento
 
-> [!NOTE] Contenidos Diapo 64
+> [!NOTE]
+> Contenidos Diapo 64
 
 #### Asignar evento a un nuevo nodo
 
-> [!NOTE] Contenidos Diapo 65
+> [!NOTE]
+> Contenidos Diapo 65
 
 ### Eventos de teclado
 
-> [!NOTE] Contenidos Diapo 67
-
-> [!NOTE] Contenidos Diapo 68
+> [!NOTE]
+> Contenidos Diapo 67, 68
 
 ### Tempotoralizar acciones
 
-> [!NOTE] Contenidos Diapo 70
-
-> [!NOTE] Contenidos Diapo 71
-
-> [!NOTE] Contenidos Diapo 72
-
-> [!NOTE] Contenidos Diapo 73
+> [!NOTE]
+> Contenidos Diapo 70, 71, 72, 73
