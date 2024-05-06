@@ -345,8 +345,8 @@ Pero claro, en programación eso no siempre es así. A veces queremos que se eje
 
 Un condicional es una estructura que, como su propio nombre indica, ejecuta un conjunto de instrucciones únicamente si se cumple una condición (o si no se cumple).
 
->[!Todo]
->Añadir diagrama de flujo
+---
+>TODO: Añadir diagrama de flujo
 
 ```javascript
 if(condició) { Instruccions si V }
@@ -376,16 +376,40 @@ Adiós
 > Fíjate en que la frase "Adiós" se escribirá **siempre** porque está fuera del ``if``.
 
 ---
-
->[!Todo]
-> Añadir diagrama de flujo
+>TODO: Añadir diagrama de flujo
 
 ```javascript
 if(condició) { Instruccions si V }
 else { Instruccions si F }
 ```
 
-![Disculpen las molestias, estamos trabajado en ello](img/work-dog.png)
+Ejecuta unas instrucciones si se cumple la condición y otras si no se cumple. ``ELSE`` significa "si no...".
+
+```javascript
+let numero = prompt("Dime un número pisha", "");
+if(numero>0) {
+     document.write("Dijiste un número positivo<br>");
+}
+else {
+     document.write("Dijiste un número negativo<br>");
+}
+document.write("Adiós");
+```
+
+```javascript
+/* Con este código, si el usuario escribe 7 se verá: */
+Dijiste un número positivo
+Adiós
+/* Y con un -3, se verá: */
+Dijiste un número negativo
+Adiós
+```
+
+>[!Important]
+> Igual que antes "Adiós" se verá **siempre**. Está fuera del ``if`` y del ``else``.
+
+---
+>TODO: Añadir diagrama de flujo
 
 ```javascript
 if(condició1) { Instruccions si V }
@@ -394,7 +418,33 @@ elseif(condició3) { Instruccions si V }
 else { Instruccions en cas contrari }
 ```
 
-![Disculpen las molestias, estamos trabajado en ello](img/work-dog.png)
+Si tenemos mas "caminos" en las condiciones, podemos hacer ``if`` anidamos o (más cómodo) utilizar ``else if`` en los "caminos intermedios".
+
+```javascript
+let dia = prompt("¿Qué día del mes es hoy?", "");
+if(dia<=10) {
+     document.write("PRINCIPIO de mes");
+}
+elseif(dia>20) {
+     document.write("FINAL de mes");
+}
+else {
+     document.write("MITAD de mes");
+}
+```
+
+>[!Important]
+>El últomo ``else`` NO lleva paréntesis detrás. Se escribe así, tal cual...
+
+```javascript
+/* En el ejemplo hay 3 "caminos" (IF-ELSEIF-ELSE). Si, por ejemplo, tuvieramos 5, la estructura sería... */
+
+if() { ... }
+elseif() { ... }
+elseif() { ... }
+elseif() { ... }
+else { ... }
+```
 
 ## Operadores de comparación
 
@@ -420,13 +470,27 @@ else { Instruccions en cas contrari }
 | \|\| | O | `(7>4) \|\| (2>3))` sería VERDADERO<br> `((1>4) \|\| (2>3))` sería FALSO |
 | ! | NO | `(!(1>4))` sería VERDADERO<br> `(!(7>4))` sería FALSO |
 
-## WHILE, FOR
+### Bucles
 
-![Disculpen las molestias, estamos trabajado en ello](img/work-dog.png)
+>[TODO] Contenidos Diapo 29
+
+### WHILE
+
+>[TODO] Contenidos Diapo 30
+
+### FOR
+
+>[TODO] Contenidos Diapo 31
 
 ## ARRAYS
 
-![Disculpen las molestias, estamos trabajado en ello](img/work-dog.png)
+>[TODO] Contenidos Diapo 33
+>
+>[TODO] Contenidos Diapo 34
+>
+>[TODO] Contenidos Diapo 35
+>
+>[TODO] Contenidos Diapo 36
 
 ## Document Object Model
 
@@ -485,6 +549,8 @@ document.forms[0].elements[0].size = "200px";
 ```
 
 > Descender por todo el árbol de nodos sería una locura. Pero tranquilo, ahora veremos una forma mucho más fácil...
+
+>[TODO] Contenidos Diapo 42
 
 ### Modificar los nodos del DOM
 
@@ -695,3 +761,44 @@ let zona1 = document.getElementById("zona1");
 zona1.appendChild(foto);
 // En este caso, no queremos agregar el nodo al final de la página web, sino en una zona (div) específica. Primero encontramos el nodo del div, y es a él a quien le hago el appendChild.
 ```
+## Eventos
+
+>[TODO] Contenidos Diapo 58
+
+### 3 formas de manejar eventos
+
+>[TODO] Contenidos Diapo 59
+
+>[TODO] Contenidos Diapo 60
+
+### Eventos de ratón
+
+>[TODO] Contenidos Diapo 61
+
+#### Mismo evento en muchos nodos
+
+>[TODO] Contenidos Diapo 63
+
+#### Saber que nodo ha activado el evento
+
+>[TODO] Contenidos Diapo 64
+
+#### Asignar evento a un nuevo nodo
+
+>[TODO] Contenidos Diapo 65
+
+### Eventos de teclado
+
+>[TODO] Contenidos Diapo 67
+>
+>[TODO] Contenidos Diapo 68
+
+### Tempotoralizar acciones
+
+>[TODO] Contenidos Diapo 70
+>
+>[TODO] Contenidos Diapo 71
+>
+>[TODO] Contenidos Diapo 72
+>
+>[TODO] Contenidos Diapo 73
