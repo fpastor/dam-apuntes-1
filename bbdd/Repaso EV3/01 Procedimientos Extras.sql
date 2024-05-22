@@ -2,20 +2,14 @@
 --  PROCEDIMIENTOS EXTRAS
 -- -----------------------------------------------------------------------------
 
-
 -- EXEC sp_columns TABLA
-
 -- EXEC sp_help TABLA
-
 -- SCOPE_IDENTITY()
-
 -- @@ROWCOUNT
-
 
 -- -----------------------------------------------------------------------------
 -- Comprobar si el cliente existe ANTES de comprobar si ha hecho PAGOS o PEDIDOS
 -- -----------------------------------------------------------------------------
-
 
 IF NOT EXISTS (SELECT *
                  FROM CLIENTES
@@ -25,9 +19,7 @@ BEGIN
     RETURN -2
 END
 
-
 -- -----------------------------------------------------------------------------
-
 
 SELECT *
   FROM CONTENIDOS
@@ -51,9 +43,4 @@ UPDATE CONTENIDOS
  DELETE FROM CONTENIDOS
  WHERE IdContenido = 1
 
-
 -- -----------------------------------------------------------------------------
-
-
-
-
