@@ -39,7 +39,7 @@ DECLARE @codCliente INT, @nombre_cliente VARCHAR(50)
 -- Obtenemos el máximo en función del número de elementos de la tabla
 SET @max = (SELECT COUNT(1) FROM CLIENTES)
 
-WHILE @cont <= @max
+WHILE @cont < @max -- ! OJO: Hay que poner "menor que"
 BEGIN
     SELECT TOP(1) @codCliente = codCliente,
                   @nombre_cliente = nombre_cliente
