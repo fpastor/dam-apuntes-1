@@ -44,10 +44,10 @@ BEGIN
 
     BEGIN CATCH
         ROLLBACK
-        PRINT CONCAT('ERROR:', ERROR_NUMBER(),
-                     'DESC:', ERROR_MESSAGE(),
-                     'LINEA:', ERROR_LINE(),
-                     'PROC:', ERROR_PROCEDURE())
+        PRINT CONCAT('ERROR NUMBER: ', ERROR_NUMBER())
+        PRINT CONCAT('LINE: ', ERROR_LINE())
+        PRINT CONCAT('MESSAGE: ',  ERROR_MESSAGE())
+        PRINT CONCAT('PROCEDURE: ', ERROR_PROCEDURE())   
     END CATCH
 
 END
