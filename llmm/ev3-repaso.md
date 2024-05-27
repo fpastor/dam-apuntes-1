@@ -235,3 +235,26 @@ El atributo siempre tendra ese valor, tanto si se pone como si no. No se le pued
 <!ATTLIST nom_elemento nom_atributo CDATA (opc1|opc2) #FIXED "valor_fijo">
 ```
 
+## xPath
+
+### ¿Qué es xPath?
+
+#### Selección de nodos
+
+|        |                                                |
+|--------|------------------------------------------------|
+| ``/``  | Acceso a un nodo manteniendo la ruta           |
+| ``//`` | Acceso a un noto independientemente de la ruta |
+| ``@``  | Acceso a atributos                             |
+| text() | Devuelve el contenido de un nodo               |
+| data() | Devuelve el contenido de un atributo           |
+
+Por ejemplo:
+
+Si 'precio' es un nodo...
+
+```//coche[precio>15000]/modelo/text()```
+
+Si 'precio' es un atributo...
+
+```//coche[@precio>15000]/modelo/text()```
