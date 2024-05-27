@@ -147,20 +147,22 @@ Cuando un documento XML esta enlazado a un DTD podrá ser válido si cumple con 
 >[!IMPORTANT]
 >Además se puede añadir **un carácter a la derecha** de cada hijo para saber **cuantas veces tiene que aparecer** dentro de cada padre.
 
-|      |               |
-|------|---------------|
-| NADA | 1 vez         |
-| *    | 0 ó mas       |
-| ?    | 0 ó 1 veces   |
-| +    | 1 ó mas veces |
+| Carácter     | Nº de veces   |
+|--------------|---------------|
+| (Ninguno)    | 1 vez         |
+| ``*``        | 0 ó mas       |
+| ``?``        | 0 ó 1 veces   |
+| ``+``        | 1 ó mas veces |
 
 **Por ejemplo...**
 
-| <!ELEMENT jugador ( | nombre, | ap+,    | pos, | edad?)> |
-|---------------------|:-------:|:-------:|:----:|:-------:|
-|                     | 1       | 1 o más | 1    | 0 o más |
+| ``<!ELEMENT jugador (`` | ``nombre,`` | ``ap+,`` | ``pos,`` | ``edad?)>`` |
+|-------------------------|:-----------:|:--------:|:--------:|:-----------:|
+|                         | 1           | 1 o más  | 1        | 0 o más     |
 
 >[!IMPORTANT]
+>Hay que fijarse bien dónde se pone el carácter, dentro o fuera del paréntesis, etc...
+
 ```xml
 <!ELEMENT a (b|c)*>
 <!ELEMENT a (b*|c*)>
