@@ -168,10 +168,70 @@ Cuando un documento XML esta enlazado a un DTD podrá ser válido si cumple con 
 <!ELEMENT a (b*|c*)>
 ```
 
-### Atributos
+### Declarar atributos en un DTD
 
 ```xml
-<!ATTLIST nom_elementp nom_atributo [1] [2]>
-[1] CDATA (opt1|opt2)
-[2] #REQUIRED #IMPLIED "porDefecto" #FIXED "valor"
+<!ATTLIST nom_elemento nom_atributo [Primer parámetro] [Segundo parámetro]>
 ```
+
+#### Primer parámetro
+
+##### CDATA
+
+Cualquier cadena de carácteres, sin restricciones.
+
+```xml
+<!ELEMENT autor (#PCDATA)>
+<!ATTLIST autor pais CDATA>
+...
+
+<autor pais="Estados Unidos">Henrry James</autor>
+```
+
+##### Enumerados
+
+El contenido queda restringido a una seríe de opciones. Otro valor no será válido.
+
+```xml
+<!ELEMENT persona (#PCDATA)>
+<!ATTLIST persona sexo (hombre | mujer)>
+...
+
+<persona sexo="hombre">Guillermo</persona>
+<persona sexo="poco">Bartolo</persona> <!-- NO valido -->
+```
+
+#### Segúndo parámetro
+
+##### Required
+
+El atributo es obligatorio.
+
+```xml
+<!ATTLIST nom_elemento nom_atributo CDATA (opc1|opc2) #REQUIRED>
+```
+
+##### Implied
+
+El atributo es opcional.
+
+```xml
+<!ATTLIST nom_elemento nom_atributo CDATA (opc1|opc2) #IMPLIED>
+```
+
+##### Valor por defecto
+
+Si no se pone, se entenderá que el atributo tiene este valor.
+
+```xml
+<!ATTLIST nom_elemento nom_atributo CDATA (opc1|opc2) "por_defecto">
+```
+
+##### Fixed
+
+El atributo siempre tendra ese valor, tanto si se pone como si no. No se le puede dar otro valor.
+
+```xml
+<!ATTLIST nom_elemento nom_atributo CDATA (opc1|opc2) #FIXED "valor_fijo">
+```
+
