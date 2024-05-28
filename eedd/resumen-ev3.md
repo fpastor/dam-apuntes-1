@@ -11,7 +11,21 @@
 
 - **Pruebas de caja negra y blanca:** Según si se conoce el código fuente o no.
 - **Automatización de pruebas:** Esencial para reducir costos y mejorar la eficacia del proceso de pruebas.
-- **Fases del ciclo de vida en pruebas:** Incluyen pruebas unitarias, de integración, de validación, de sistema y de aceptación.
+- **Fases del ciclo de vida en pruebas:**
+  - **Pruebas Unitarias**
+    - **Definición:** Se aplican a un componente del software, como una función, una clase o una librería. En general, se habla de una clase como componente de software.
+    - **Objetivo:** Verificar el correcto funcionamiento de cada componente individualmente antes de integrarlo con otros.
+  - **Pruebas de Integración**
+    - **Definición:** Consiste en construir el sistema a partir de los distintos componentes y probarlo con todos integrados. Estas pruebas se realizan progresivamente y se centran en la coherencia semántica entre los diferentes módulos.
+    - **Objetivo:** Asegurar que los módulos interactúan correctamente entre sí y funcionan como un sistema integrado.
+  - **Pruebas de Sistema**
+    - **Definición:** Una vez que el software ha sido validado, se prueba en conjunto con el resto del sistema, incluyendo elementos mecánicos y interfaces electrónicas, si los hubiera.
+    - **Objetivo:** Verificar que el software integrado funciona adecuadamente dentro del sistema completo, incluyendo la gestión de la seguridad, el rendimiento bajo cargas de trabajo significativas y la recuperación del sistema ante fallos .
+  - **Pruebas de Aceptación**
+    - **Definición:** Son pruebas finales realizadas por los usuarios o clientes para verificar si el sistema cumple con los requisitos y si es aceptable para su entrega. Se distinguen entre pruebas alfa, realizadas con personal de desarrollo, y pruebas beta, llevadas a cabo por usuarios después de recibir una versión casi final del producto.
+    - **Objetivo:** Confirmar que el sistema cumple con las expectativas del cliente y está listo para su implementación y uso en producción .
+
+Estas descripciones están extraídas directamente del documento y reflejan con precisión el contenido específico sobre las diferentes fases de prueba mencionadas en el PDF.
 
 ### 3. Procedimientos y casos de prueba
 
